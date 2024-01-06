@@ -30,8 +30,7 @@ def value_parser(byte_value, value_type):
 
 
 while True:
-    # receive the response data (4096 is recommended buffer size)
-    response = client.recv(1024)
+    response = client.recv(36)
 
     response_size = len(response)
     response_time = datetime.now().isoformat()
